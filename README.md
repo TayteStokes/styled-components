@@ -194,6 +194,21 @@ const Rotate = styled.div`
 `;
 ```
 
+### Media Queries
+We can define a set of styling rules for each component for different view port sizes by using media queries. It's very similar to how we create the media queries using regualar CSS, however we just include the `@media(){}` within the components styling. It will look something like this:
+
+```javascript
+const Content = styled.div`
+  background: papayawhip;
+  height: 3em;
+  width: 3em;
+
+  @media (max-width: 700px) {
+    background: palevioletred;
+  }
+`;
+```
+
 ### Psuedo Selecters, Psuedo ELements, and Nesting
 Stlyed components uses a preprocessor called `stylis` that supports scss-like-syntax to allow us to use nesting styles. Psuedo selectors and psuedo elements don't require any further configuration and are automatically set to the component itself. It will look like this:
 
